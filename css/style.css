@@ -1,0 +1,320 @@
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*
+
+
+
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,italic,500,500italic,700,700italic,900,900italic&display=swap");
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px; /* по умолчанию */
+}
+body {
+	line-height: 1;
+	font-family: poppins;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	padding: 20px;
+}
+/* ------------------------------ */
+h1 {
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	font-style: italic;
+	text-align: center;
+	margin-bottom: 20px;
+}
+h2 {
+	text-align: center;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+main {
+	width: 90%;
+	margin: 0 auto;
+}
+.first_color,
+.second_color,
+.background,
+.no-repeat,
+.repeat-x,
+.repeat-y,
+.space,
+.round,
+.linear,
+.radial,
+.center,
+.left,
+.right,
+.position,
+.fixed,
+.local,
+.images,
+.images2,
+.images3,
+.height,
+.width_height,
+.size {
+	text-align: center;
+	font-size: 18px;
+	text-transform: uppercase;
+	padding-top: 100px;
+	min-height: 200px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	font-weight: 700;
+}
+
+.first_color {
+	background: #a3a9a4;
+}
+.second_color {
+	background: rgba(163, 169, 164, 0.3);
+}
+.background {
+	border: 2px solid #0900ff;
+	background: url("../img/check.png");
+	background-size: 45px;
+}
+.no-repeat {
+	border: 2px solid #0900ff;
+	background: url("../img/check.png") no-repeat;
+	background-size: 45px;
+}
+.repeat-x {
+	border: 2px solid #0900ff;
+	background: url("../img/check.png") repeat-x;
+	background-size: 45px;
+}
+.repeat-y {
+	border: 2px solid #0900ff;
+	background: url("../img/check.png") repeat-y;
+	background-size: 45px;
+}
+.space {
+	border: 2px solid #0900ff;
+	background: url("../img/check.png") space;
+	background-size: 45px;
+}
+.round {
+	border: 2px solid #0900ff;
+	background: url("../img/check.png") round;
+	background-size: 45px;
+}
+.linear {
+	background: linear-gradient(
+		to bottom,
+		#1e5799 0%,
+		#2989d8 34%,
+		#2989d8 34%,
+		#207cca 43%,
+		#207cca 43%,
+		#207cca 47%,
+		#7db9e8 77%
+	);
+}
+.radial {
+	background: radial-gradient(
+		ellipse at center,
+		#4c4c4c 0%,
+		#595959 12%,
+		#666666 25%,
+		#474747 39%,
+		#2c2c2c 50%,
+		#111111 70%,
+		#111111 70%,
+		#2b2b2b 76%,
+		#1c1c1c 91%,
+		#131313 100%
+	);
+}
+.center {
+	padding-top: 50px;
+	border: 2px solid #0900ff;
+	background: url("../img/moon.png") 50%/50px 50px no-repeat;
+}
+.left {
+	border: 2px solid #0900ff;
+	background: url("../img/moon.png") 0 100%/50px 50px no-repeat;
+}
+.right {
+	border: 2px solid #0900ff;
+	background: url("../img/moon.png") 100% 0%/40px no-repeat;
+}
+.position {
+	border: 2px solid #0900ff;
+	background: url("../img/moon.png") 500px 120px/40px 50px no-repeat;
+}
+.fixed {
+	border: 2px solid #0900ff;
+	background: url("../img/banff-national-park-canada-3967.jpg") 0 0 no-repeat fixed;
+}
+.local {
+	max-height: 200px;
+	background: url("../img/banff-national-park-canada-3967.jpg") 0 0 no-repeat local;
+	overflow: auto;
+	line-height: 180%;
+}
+.images {
+	background: url(../img/check.png) 0 0 no-repeat, url(../img/second.jpg) 100% 50% no-repeat,
+		url(../img/moon.png) 25% / 70px no-repeat, url(../img/second2.webp) 50% 100%;
+}
+.images2 {
+	background: url(../img/banff-national-park-canada-3967.jpg) 0 0/100% auto no-repeat;
+}
+.images3 {
+	background: url(../img/banff-national-park-canada-3967.jpg) 0 0 / auto 100% no-repeat;
+}
+.width_height {
+	background: url(../img/banff-national-park-canada-3967.jpg) 0 0 / 100% no-repeat;
+}
+.size {
+	border: 2px solid #0900ff;
+	background: url(../img/banff-national-park-canada-3967.jpg) 25% 50%/ 150px no-repeat;
+}
+.list li {
+	max-width: 250px;
+	background: url(../img/check.png) right 7px / 15px no-repeat;
+	padding: 0px 30px 0px 0px;
+	line-height: 30px;
+	min-height: 40px;
+}
+h3 {
+	color: #4b4b4b;
+	font-family: roboto;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 22px;
+	letter-spacing: 0.15px;
+	margin-bottom: 28px;
+}
+.first_blok {
+	padding: 30px;
+}
+.first_blok li {
+	font-family: roboto;
+	font-size: 14px;
+	min-height: 16px;
+	color: #4b4b4b;
+	letter-spacing: 0.15px;
+	margin-bottom: 16px;
+	padding-left: 25px;
+	text-transform: capitalize;
+}
+.address {
+	background: url("../img/place_26px.png") 0 0 no-repeat;
+	max-width: 200px;
+}
+.contact {
+	background: url("../img/smartphone_24px.png") 0 0 no-repeat;
+}
+.mail {
+	background: url("../img/email_24px.png") 0 0 no-repeat;
+}
+.time {
+	background: url("../img/timer_24px.png") 0 0 no-repeat;
+}
+.second_blok {
+	min-height: 800px;
+	padding: 280px 0px 48px 210px;
+	background: url("../img/BG_Image.png") 0 0 / cover no-repeat;
+}
+.second_title h4 {
+	font-family: roboto;
+	color: #fff;
+	font-size: 56px;
+	line-height: 56px;
+	max-width: 583px;
+	font-weight: 900;
+	margin-bottom: 57px;
+}
+.button {
+	width: 211px;
+	height: 48px;
+	background-color: #c40b0b;
+	font-family: roboto;
+	color: #fff;
+	font-size: 12px;
+	line-height: 24px;
+	letter-spacing: 0.15px;
+	text-transform: uppercase;
+	background: #c40b0b url("../img/Button48px.png") right no-repeat;
+	line-height: 24px;
+	padding: 15px 45px 15px 9px;
+}
+.extra {
+	margin-top: 50px;
+	width: 1440px;
+	height: 608px;
+	background: url("../img/BG_Image2.png") 0 0 no-repeat;
+}
+.extra_body {
+	max-width: 1020px;
+	margin: 0 auto;
+}
+.second_img {
+}
+.extra_title {
+	padding: 112px 0px 31px 0px;
+}
+.extra_title h3 {
+	font-family: roboto;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 27px;
+	letter-spacing: 2.5px;
+	color: #d5d5d5;
+	display: inline-block;
+}
+.sub_title {
+	display: inline-block;
+	max-width: 411px;
+	font-family: roboto;
+	font-size: 36px;
+	line-height: 42px;
+	color: #fff;
+	font-weight: 900;
+}
